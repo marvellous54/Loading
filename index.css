@@ -19,7 +19,7 @@ body{
 /*--BODIES--*/
 .top-page{
     height: 70vh;
-    background: linear-gradient(#77e04d, #81ffff);
+    background: /* linear-gradient(#77e04d, #81ffff) */ url(img/loading.jpg);
 }
 
 nav{
