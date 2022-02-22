@@ -2,7 +2,7 @@
 	margin: 0px;
 	padding: 0px;
 	box-sizing: border-box;
-	font-family: ;
+	font-family: ubuntu;
 	overflow-x: hidden;
 	text-decoration: none;
 }
@@ -20,7 +20,7 @@ body{
 .top-page{
     height: 70vh;
     background: /* linear-gradient(#77e04d, #81ffff) */ url(img/loading.jpg);
-	background-position: center;
+    background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -32,9 +32,19 @@ nav{
     align-items: center;
 }
 
+.WelcomeText{
+    height: 85%;
+    background-color: ;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+}
 /*--LINKS--*/
 nav p a{
     margin: 2em;
+    color: white
 }
 
 .logo{
@@ -50,7 +60,47 @@ nav p{
 }
 
 /*--TEXTS--*/
+.WelcomeText p:nth-child(1){
+    font-size: 2em;
+    font-weight: 300;
+    padding: 0.2em;
+    color: #e2dbcf;
+    text-shadow: 0px 0px 2px black;
+}
 
+.WelcomeText p:nth-child(2){
+    text-shadow: 0px 0px 2px white;
+    font-family: /* Titillium Web */ Rowdies;
+    text-transform: uppercase;
+    font-weight: 50;
+}
+
+/*--DOTS--*/
+.dot-row{
+    display: flex;
+}
+
+.dots{
+    padding: 0.5em;
+    border-radius: 50%;
+    background-color: transparent;
+    margin: 1em 0.3em;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+    border: 0.5px solid white;
+}
+
+.dot1{
+    animation-name: red;
+}
+
+.dot2{
+    animation-name: blue;
+}
+
+.dot3{
+    animation-name: green;
+}
 
 /*------------MEDIA_QUERY---------------------------------------------*/
 
@@ -75,5 +125,34 @@ nav p{
     nav p{
         justify-content: center;
         z-index: 99;
+    }
+}
+
+
+@media all and (min-width: 600px){
+    .WelcomeText p{
+        transform: scale(1.5);
+        padding: 1em;
+    }
+}
+
+
+/*--ANIMATION--------------------------------------------------------------*/
+
+@keyframes red {
+    0%{
+        background-color: #8b8787;
+    }
+}
+
+@keyframes blue {
+    50%{
+        background-color: #3d3c3c;
+    }
+}
+
+@keyframes green {
+    100%{
+        background-color: #1b1b1b;
     }
 }
