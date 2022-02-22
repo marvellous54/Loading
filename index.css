@@ -20,6 +20,9 @@ body{
 .top-page{
     height: 70vh;
     background: /* linear-gradient(#77e04d, #81ffff) */ url(img/loading.jpg);
+	background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 nav{
